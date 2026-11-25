@@ -1,0 +1,63 @@
+name: Build TÜRKAN Keyboard APK
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches: [ main, master ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Check generated converter tables are up to date
+        run: |
+          python3 tools/gen_script_tables.py
+          git diff --exit-code -- app/src/main/java/com/turkanyazi/keyboard/ScriptTables.kt tools/out
+
+      - name: Install Android SDK components
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android platform and build tools
+        run: sdkmanager --install "platforms;android-35" "build-tools;35.0.0"
+
+      # Pin Gradle explicitly: runner images may ship a newer Gradle that the
+      # Android Gradle Plugin used here does not support.
+      - name: Set up Gradle 8.9
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Run unit tests and build debug APK
+        run: gradle --no-daemon clean testDebugUnitTest assembleDebug
+
+      - name: Upload test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unit-test-reports
+          path: |
+            app/build/reports/tests/
+            app/build/test-results/
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: TURKAN-Keyboard-debug-APK
+          path: app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 14

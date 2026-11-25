@@ -1,0 +1,1 @@
+Put NotoSansOldTurkic-Regular.ttf here (Google Fonts, SIL OFL license) so Orkhon letters render on every phone.

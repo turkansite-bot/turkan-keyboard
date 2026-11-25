@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="az" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TÜRKAN – تورکجه کیبوردو</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&family=Noto+Sans+Old+Turkic&display=swap">
+<style>
+:root{--bg:#f4f5f8;--sf:#fff;--ink:#0f1720;--mut:#5b6677;--line:#dfe3ea;--cap:#fff;--sp:#e8ebf0;--kb:#d9dee7;--blue:#1d4ed8;--red:#c62828;--green:#1b7f4b;--on:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a0d13;--sf:#121722;--ink:#e8ecf3;--mut:#93a0b5;--line:#232b3a;--cap:#2b3447;--sp:#1e2533;--kb:#0d111a;--blue:#6e9bff;--red:#ff7b7b;--green:#4fd18b;--on:#0a0d13}}
+:root[data-theme="dark"]{--bg:#0a0d13;--sf:#121722;--ink:#e8ecf3;--mut:#93a0b5;--line:#232b3a;--cap:#2b3447;--sp:#1e2533;--kb:#0d111a;--blue:#6e9bff;--red:#ff7b7b;--green:#4fd18b;--on:#0a0d13}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.65 Vazirmatn,system-ui,"Segoe UI",Tahoma,sans-serif;padding:0 14px 32px}
+.wrap{max-width:1040px;margin:0 auto}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.mark{display:flex;gap:3px;height:30px;align-items:flex-end}.mark i{width:7px;border-radius:2px}
+.mark i:nth-child(1){height:30px;background:var(--blue)}.mark i:nth-child(2){height:21px;background:var(--red)}.mark i:nth-child(3){height:13px;background:var(--green)}
+h1{margin:0;font-size:1.5rem;font-weight:800;line-height:1;letter-spacing:.04em}
+.tag{margin:3px 0 0;color:var(--mut);font-size:.82rem;line-height:1.4}
+.brand{min-width:0}
+.grid{display:grid;gap:14px}
+@media (min-width:980px){.grid{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);align-items:start}.side{position:sticky;top:14px}}
+.card{background:var(--sf);border:1px solid var(--line);border-radius:14px;padding:14px}
+.card+.card{margin-top:14px}
+.tb{display:flex;align-items:center;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.tb .sp1{flex:1}
+.cnt{color:var(--mut);font-size:.8rem}
+textarea{display:block;width:100%;min-height:140px;resize:vertical;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);padding:12px 14px;font:22px/1.6 Vazirmatn,system-ui,"Noto Sans Old Turkic","Segoe UI Historic",sans-serif}
+textarea:focus{outline:2px solid var(--blue);outline-offset:1px}
+button{white-space:nowrap;font:inherit;color:var(--ink);background:var(--sf);border:1px solid var(--line);border-radius:9px;min-height:40px;padding:0 12px;cursor:pointer;touch-action:manipulation}
+button:hover:not(:disabled){border-color:var(--mut)}
+button:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+button:disabled{opacity:.4;cursor:default}
+.ib{min-height:34px;padding:0 10px;font-size:.85rem}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.acts button{flex:1 1 auto;font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.acts button::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--d)}
+.d-g{--d:var(--green)}.d-r{--d:var(--red)}.d-b{--d:var(--blue)}
+.seg{display:flex;gap:4px;background:var(--bg);border:1px solid var(--line);border-radius:11px;padding:3px;margin-bottom:10px}
+.seg button{flex:1;border:0;background:transparent;font-weight:600;min-height:36px}
+.seg button.on{background:var(--blue);color:var(--on)}
+#kb{direction:ltr;background:var(--kb);border-radius:12px;padding:8px}
+.row{display:flex;gap:5px;margin-bottom:5px}
+.row:last-child{margin-bottom:0}
+.row.s1{padding:0 3.5%}.row.s2{padding:0 8%}
+.row button{flex:1 1 0;min-width:0;padding:0;min-height:48px;font-size:19px;border-radius:8px;background:var(--cap);border-bottom-width:2px;user-select:none;-webkit-user-select:none}
+.row button:active{transform:translateY(1px);border-bottom-width:1px}
+.row button.sp{background:var(--sp);font-size:16px}
+.row button.w2{flex:2}.row button.w4{flex:4;color:var(--mut);font-size:13px;letter-spacing:.25em}
+.row button.on{background:var(--blue);color:var(--on);border-color:transparent}
+.row button.oo{border-color:var(--blue);color:var(--blue)}
+.row button.dl{color:var(--red)}
+.ork{font-family:"Noto Sans Old Turkic","Segoe UI Historic",sans-serif;font-size:23px!important}
+.res{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.res:first-of-type{border-top:0;padding-top:0}
+.res>div{flex:1;min-width:0}
+.res h2{margin:0;font-size:.78rem;font-weight:600;color:var(--c);display:flex;align-items:center;gap:6px}
+.res h2::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--c)}
+.rb{--c:var(--blue)}.rg{--c:var(--green)}.rr{--c:var(--red)}
+output{display:block;font-size:1.3rem;overflow-wrap:anywhere;min-height:1.65em}
+output:empty::before{content:"—";color:var(--mut)}
+.chk{display:inline-flex;align-items:center;gap:6px;font-size:.85rem;color:var(--mut);cursor:pointer;min-height:34px}.chk input{width:18px;height:18px;accent-color:var(--blue)}
+.note{margin:12px 2px 0;color:var(--mut);font-size:.8rem}
+#toast{position:fixed;inset-inline:0;bottom:calc(18px + env(safe-area-inset-bottom,0px));margin:auto;width:max-content;max-width:90vw;background:var(--ink);color:var(--bg);padding:8px 16px;border-radius:999px;font-size:.88rem;opacity:0;transform:translateY(8px);transition:opacity .18s,transform .18s;pointer-events:none}
+#toast.show{opacity:1;transform:none}
+@media (max-width:480px){body{padding:0 6px 28px}.card{padding:10px}.card.kbc{padding:6px}#kb{padding:4px}.row{gap:3px;margin-bottom:3px}.row button{font-size:18px}.row button.sp{font-size:15px}}
+@media (max-width:380px){.row button{font-size:16px;min-height:44px}.row.s1{padding:0 2%}.row.s2{padding:0 4%}}
+@media (prefers-reduced-motion:reduce){#toast{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="brand"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><div><h1>TÜRKAN</h1><p class="tag" data-i="tag"></p></div></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap"><button class="ib" id="lang" type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-3px;margin-inline-end:6px"><path d="M4 8h14l-3.5-3.5"/><path d="M20 16H6l3.5 3.5"/></svg><span id="langt"></span></button><button class="ib" id="theme" aria-pressed="false"></button></div>
+</header>
+<div class="grid">
+<div>
+<section class="card" data-a="editor">
+<div class="tb">
+<button class="ib" id="undo" data-i="undo"></button>
+<button class="ib" id="redo" data-i="redo"></button>
+<span class="sp1"></span><span class="cnt" id="cnt" aria-live="off"></span>
+</div>
+<textarea id="ta" inputmode="none" dir="auto" data-a="text" data-p="ph"></textarea>
+<div class="acts">
+<button id="conv" class="d-g">Türkcə ⇄ تورکجه</button>
+<button id="ork" class="d-r" data-i="ork"></button>
+<button id="back" class="d-b" data-i="back"></button>
+</div>
+<div class="tb" style="margin:12px 0 0">
+<button class="ib" id="copy" data-i="cpall"></button>
+<button class="ib" id="clr" data-i="clr"></button>
+<span class="sp1"></span>
+<label class="chk"><input type="checkbox" id="fa" checked> <span data-i="fa"></span></label>
+<button class="ib" id="sys" aria-pressed="false"></button>
+</div>
+</section>
+<section class="card kbc" data-a="kbd">
+<div class="seg" id="tabs" role="group" data-a="layout"></div>
+<div id="kb"></div>
+</section>
+</div>
+<aside class="side">
+<section class="card" data-a="prev">
+<div class="res rb"><div><h2>Türkcə</h2><output id="o-lat" dir="auto"></output></div><button class="ib" data-c="o-lat" data-i="cp"></button></div>
+<div class="res rg"><div><h2>تورکجه</h2><output id="o-ar" dir="rtl"></output></div><button class="ib" data-c="o-ar" data-i="cp"></button></div>
+<div class="res rr"><div><h2 data-i="orx"></h2><output id="o-ork" dir="rtl" class="ork"></output></div><button class="ib" data-c="o-ork" data-i="cp"></button></div>
+<p class="note" data-i="note"></p>
+</section>
+</aside>
+</div>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script>
+const AZ='az', ta=document.getElementById('ta');
+/* GENERATED by tools/gen_script_tables.py */
+const T={fold:{'\u00C4':'\u018F','\u00E4':'\u0259','\u018E':'\u018F','\u01DD':'\u0259','\u0218':'\u015E','\u0219':'\u015F'},
+l2a:{'\u0061':'\u0627','\u0062':'\u0628','\u0063':'\u062C','\u0064':'\u062F','\u0065':'\u0647','\u0066':'\u0641','\u0067':'\u06AF','\u0068':'\u06BE','\u0069':'\u06CC','\u006A':'\u0698','\u006B':'\u06A9','\u006C':'\u0644','\u006D':'\u0645','\u006E':'\u0646','\u006F':'\u0648','\u0070':'\u067E','\u0071':'\u0642','\u0072':'\u0631','\u0073':'\u0633','\u0074':'\u062A','\u0075':'\u06C7','\u0076':'\u06CB','\u0077':'\u06CB','\u0078':'\u062E','\u0079':'\u064A','\u007A':'\u0632','\u00E7':'\u0686','\u00F6':'\u0624','\u00FC':'\u06C6','\u011F':'\u063A','\u0131':'\u0649','\u015F':'\u0634','\u0259':'\u06D5'},
+p2a:{'\u0025':'\u066A','\u003B':'\u061B','\u003F':'\u061F'},
+a2l:{'\u060C':'\u002C','\u061B':'\u003B','\u061F':'\u003F','\u0621':'','\u0622':'\u0061','\u0623':'\u0061','\u0624':'\u00F6','\u0625':'\u0061','\u0626':'\u0069','\u0627':'\u0061','\u0628':'\u0062','\u0629':'\u0074','\u062A':'\u0074','\u062B':'\u0073','\u062C':'\u0063','\u062D':'\u0068','\u062E':'\u0078','\u062F':'\u0064','\u0630':'\u007A','\u0631':'\u0072','\u0632':'\u007A','\u0633':'\u0073','\u0634':'\u015F','\u0635':'\u0073','\u0636':'\u007A','\u0637':'\u0074','\u0638':'\u007A','\u0639':'\u0259','\u063A':'\u011F','\u0641':'\u0066','\u0642':'\u0071','\u0643':'\u006B','\u0644':'\u006C','\u0645':'\u006D','\u0646':'\u006E','\u0647':'\u0065','\u0648':'\u006F','\u0649':'\u0131','\u064A':'\u0079','\u066A':'\u0025','\u066B':'\u002C','\u066C':'\u002E','\u066D':'\u002A','\u0671':'\u0061','\u067E':'\u0070','\u0686':'\u00E7','\u0698':'\u006A','\u06A4':'\u0076','\u06A9':'\u006B','\u06AA':'\u006B','\u06AD':'\u006E\u0067','\u06AF':'\u0067','\u06B5':'\u006C','\u06BE':'\u0068','\u06C0':'\u0259','\u06C1':'\u0068','\u06C6':'\u00FC','\u06C7':'\u0075','\u06CB':'\u0076','\u06CC':'\u0069','\u06CE':'\u0065','\u06D0':'\u0065','\u06D2':'\u0079','\u06D4':'\u002E','\u06D5':'\u0259'},
+drop:[[1611,1631],[1648,1648],[1600,1600],[1750,1756],[1759,1764],[1767,1768],[1770,1773],[8204,8205]]};
+
+// Latin <-> Arabic script, profile v0.3 (same rules as the Android app's ScriptConverter)
+let faDigits=true;
+const isD=c=>c!==undefined&&c>='0'&&c<='9';
+function lat2ar(text,digits=faDigits){
+  const s=text.normalize('NFC');let out='';
+  for(let i=0;i<s.length;i++){
+    const c=s[i],f=T.fold[c]||c;
+    const lo=f==='I'?'\u0131':f==='\u0130'?'i':f.toLowerCase();
+    if(lo.length===1&&T.l2a[lo]){out+=T.l2a[lo];continue}
+    if(digits&&isD(c)){out+=String.fromCharCode(0x06F0+Number(c));continue}
+    if(c===','){out+=(isD(s[i-1])&&isD(s[i+1]))?'\u066B':'\u060C';continue}
+    out+=T.p2a[c]||c;
+  }
+  return out}
+function ar2lat(text){
+  let out='';
+  const one=c=>{
+    if(T.a2l[c]!==undefined){out+=T.a2l[c];return}
+    const k=c.charCodeAt(0);
+    if(T.drop.some(r=>k>=r[0]&&k<=r[1]))return;
+    if(k>=0x660&&k<=0x669){out+=String(k-0x660);return}
+    if(k>=0x6F0&&k<=0x6F9){out+=String(k-0x6F0);return}
+    if((k>=0xFB50&&k<=0xFDFF)||(k>=0xFE70&&k<=0xFEFF)){const n=c.normalize('NFKC');if(n!==c){for(const x of n)one(x);return}}
+    out+=c};
+  for(const c of text)one(c);
+  return out}
+const hasAr=s=>/(?=\p{L})\p{Script=Arabic}/u.test(s);
+const smart=s=>hasAr(s)?ar2lat(s):lat2ar(s);
+
+// Orkhon (Old Turkic) – same rules as the Android app
+const VOW='aıou'+'əeiöü', BACKV='aıou';
+const S={},P={};
+[['aəe',0x10C00],['ıi',0x10C03],['ou',0x10C06],['öü',0x10C07],['m',0x10C22],['z',0x10C14],['çc',0x10C32],['pf',0x10C2F]].forEach(([k,v])=>[...k].forEach(c=>S[c]=v));
+[['bv',0x10C09,0x10C0B],['d',0x10C11,0x10C13],['gğ',0x10C0D,0x10C0F],['yj',0x10C16,0x10C18],['l',0x10C1E,0x10C20],['n',0x10C23,0x10C24],['r',0x10C3A,0x10C3C],['s',0x10C3D,0x10C3E],['t',0x10C43,0x10C45],['ş',0x10C3F,0x10C41]].forEach(([k,b,f])=>[...k].forEach(c=>P[c]=[b,f]));
+const near=(w,i)=>{for(let j=i+1;j<w.length;j++)if(VOW.includes(w[j]))return w[j];for(let j=i-1;j>=0;j--)if(VOW.includes(w[j]))return w[j]};
+const qs=v=>'ou'.includes(v||'-')?0x10C38:v==='ı'?0x10C36:0x10C34;
+const ks=v=>'öü'.includes(v||'-')?0x10C1C:0x10C1A;
+function orkWord(raw){
+  const w=raw.toLocaleLowerCase(AZ);
+  const fv=[...w].find(c=>VOW.includes(c));
+  const back=fv===undefined?true:BACKV.includes(fv);
+  let out='';
+  for(let i=0;i<w.length;i++){
+    const c=w[i];
+    if(c==='n'&&w[i+1]==='g'){out+=String.fromCodePoint(0x10C2D);i++;continue}
+    let cp;
+    if(S[c])cp=S[c];
+    else if(P[c])cp=P[c][back?0:1];
+    else if(c==='q')cp=qs(near(w,i));
+    else if('kxh'.includes(c))cp=back?qs(near(w,i)):ks(near(w,i));
+    else{out+=c;continue}
+    out+=String.fromCodePoint(cp);
+  }
+  return out;
+}
+const toOrk=s=>s.replace(/[\p{L}]+/gu,orkWord).replace(/ /g,':');
+// reverse (lossy)
+const R={};
+[[0x10C00,'a','ə'],[0x10C03,'ı','i'],[0x10C06,'o'],[0x10C07,'ö'],[0x10C09,'b'],[0x10C0B,'b'],[0x10C0D,'g'],[0x10C0F,'g'],[0x10C11,'d'],[0x10C13,'d'],[0x10C14,'z'],[0x10C16,'y'],[0x10C18,'y'],[0x10C1A,'k'],[0x10C1C,'k'],[0x10C1E,'l'],[0x10C20,'l'],[0x10C21,'lt'],[0x10C22,'m'],[0x10C23,'n'],[0x10C24,'n'],[0x10C26,'nt'],[0x10C28,'nc'],[0x10C2A,'ny'],[0x10C2D,'ng'],[0x10C2F,'p'],[0x10C30,'p'],[0x10C31,'ç'],[0x10C32,'ç'],[0x10C34,'q'],[0x10C36,'q'],[0x10C38,'q'],[0x10C3A,'r'],[0x10C3C,'r'],[0x10C3D,'s'],[0x10C3E,'s'],[0x10C3F,'ş'],[0x10C41,'ş'],[0x10C43,'t'],[0x10C45,'t'],[0x10C47,'ot'],[0x10C48,'baş']].forEach(([c,b,f])=>R[c]=[b,f??b]);
+const FRONT=new Set([0x10C07,0x10C0B,0x10C0F,0x10C13,0x10C18,0x10C1A,0x10C1C,0x10C20,0x10C24,0x10C3C,0x10C3E,0x10C41,0x10C45]);
+function toLat(s){
+  let out='',run=[];
+  const flush=()=>{const f=run.some(c=>FRONT.has(c));run.forEach(c=>out+=R[c][f?1:0]);run=[]};
+  for(const ch of s){const c=ch.codePointAt(0);
+    if(R[c])run.push(c);else{flush();out+=ch===':'?' ':ch}}
+  flush();return out;
+}
+
+// Keyboard
+const G=s=>Array.from(s);
+const ORK=[0x10C00,0x10C03,0x10C06,0x10C07,0x10C09,0x10C0B,0x10C0D,0x10C0F,0x10C11,0x10C13,0x10C14,0x10C16,0x10C18,0x10C1A,0x10C1C,0x10C1E,0x10C20,0x10C21,0x10C22,0x10C23,0x10C24,0x10C26,0x10C28,0x10C2A,0x10C2D,0x10C2F,0x10C30,0x10C31,0x10C32,0x10C34,0x10C36,0x10C38,0x10C3A,0x10C3C,0x10C3D,0x10C3E,0x10C3F,0x10C41,0x10C43,0x10C45,0x10C47,0x10C48].map(c=>String.fromCodePoint(c));
+const LAY={
+ lat:{name:'Türkcə',rows:['1234567890','qüertyuiopöğ','asdfghjklıə','zxcvbnmçş'].map(G),comma:','},
+ ar:{name:'تورکجه',rows:['۱۲۳۴۵۶۷۸۹۰','ضصثقفغعهخحج','شسیبلاتنمکگ','ظطزرذدپوچژ','ەۇۆۋؤئيىءھآ'].map(G),comma:'،',zw:true},
+ ork:{name:'Ork',rows:[G('1234567890'),ORK.slice(0,11),ORK.slice(11,22),ORK.slice(22,33),ORK.slice(33)],comma:':',ork:true},
+ sym:{name:'?#',rows:['1234567890','@#$_&-+()/','*"\':;!?%=<>','[]{}\\|~^€£','،؛؟«»…'].map(G),comma:','}
+};
+let cur='lat',sh=0,lastTap=0,tm;
+const $=id=>document.getElementById(id);
+const hist=[{v:'',s:0,e:0}];let hi=0;
+const hasOrk=s=>/[\u{10C00}-\u{10C4F}]/u.test(s);
+function toast(m){const t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('show'),1500)}
+async function copy(t){if(!t)return toast(TX('nocopy'));
+  try{await navigator.clipboard.writeText(t);toast(TX('copied'))}catch(e){const x=document.createElement('textarea');x.value=t;x.style.cssText='position:fixed;opacity:0';document.body.append(x);x.select();let ok=false;try{ok=document.execCommand('copy')}catch(_){}x.remove();toast(ok?TX('copied'):TX('copyfail'))}}
+function ui(){const t=ta.value;
+  $('undo').disabled=hi===0;$('redo').disabled=hi===hist.length-1;
+  const w=t.trim()?t.trim().split(/\s+/).length:0;$('cnt').textContent=Array.from(t).length+TX('cc')+w+TX('ww');
+  const lat=hasOrk(t)?toLat(t):ar2lat(t);
+  $('o-lat').textContent=lat;$('o-ar').textContent=lat2ar(lat);$('o-ork').textContent=toOrk(lat);
+  try{localStorage.setItem('turkan-draft',t)}catch(e){}}
+function snap(){const v=ta.value;if(v===hist[hi].v)return;hist.length=hi+1;hist.push({v,s:ta.selectionStart,e:ta.selectionEnd});if(hist.length>200)hist.shift();hi=hist.length-1;ui()}
+function step(d){snap();go(hi+d)}
+function go(i){if(i<0||i>=hist.length)return;hi=i;const h=hist[i];ta.value=h.v;ta.setSelectionRange(h.s,h.e);ta.focus({preventScroll:true});ui()}
+function put(t){snap();ta.setRangeText(t,ta.selectionStart,ta.selectionEnd,'end');ta.focus({preventScroll:true});snap();ui()}
+function del(){snap();let s=ta.selectionStart,e=ta.selectionEnd;
+  if(s===e&&s>0){const c=ta.value.charCodeAt(s-1);s-=(c>=0xDC00&&c<=0xDFFF&&s>1)?2:1}
+  ta.setRangeText('',s,e,'end');ta.focus({preventScroll:true});snap();ui()}
+function apply(fn){snap();const s=ta.selectionStart,e=ta.selectionEnd;
+  if(s!==e)ta.setRangeText(fn(ta.value.slice(s,e)),s,e,'select');else{ta.value=fn(ta.value);ta.setSelectionRange(ta.value.length,ta.value.length)}
+  ta.focus({preventScroll:true});snap();ui()}
+function key(label,cls,fn,aria){const b=document.createElement('button');b.type='button';b.textContent=label;if(cls)b.className=cls;if(aria)b.setAttribute('aria-label',aria);
+  b.addEventListener('mousedown',e=>e.preventDefault());b.addEventListener('click',fn);return b}
+function delKey(){const b=key('⌫','sp w2 dl',ev=>{if(ev.detail===0)del()},TX('del'));let t,iv;
+  const stop=()=>{clearTimeout(t);clearInterval(iv)};
+  b.addEventListener('pointerdown',ev=>{ev.preventDefault();del();stop();t=setTimeout(()=>{iv=setInterval(del,55)},380)});
+  ['pointerup','pointerleave','pointercancel'].forEach(n=>b.addEventListener(n,stop));
+  b.addEventListener('contextmenu',e=>e.preventDefault());return b}
+function render(){
+  const L=LAY[cur],kb=$('kb');kb.textContent='';
+  L.rows.forEach((r,ri)=>{const d=document.createElement('div');d.className='row'+(cur==='lat'&&ri>1?' s'+(ri-1):'')+(cur==='ar'&&ri===3?' s1':'');
+    r.forEach(g=>{const t=(cur==='lat'&&sh&&ri>0)?g.toLocaleUpperCase(AZ):g;
+      d.append(key(t,L.ork&&ri>0?'ork':'',()=>{put(t);if(sh===1){sh=0;render()}},L.ork&&ri>0?toLat(t):undefined))});kb.append(d)});
+  const d=document.createElement('div');d.className='row';
+  if(cur==='lat')d.append(key('⇧',sh===2?'on':sh===1?'oo':'sp',()=>{const n=Date.now();sh=(sh===1&&n-lastTap<350)?2:(sh?0:1);lastTap=n;render()},TX('shift')));
+  d.append(key(L.comma,'sp',()=>put(L.comma)));
+  if(L.zw)d.append(key('ZWNJ','sp',()=>put('\u200C'),TX('zw')));
+  d.append(key('TÜRKAN','w4',()=>put(' '),TX('space')));
+  d.append(key('.','sp',()=>put('.')));
+  d.append(delKey());
+  d.append(key('⏎','on w2',()=>put('\n'),TX('enter')));
+  kb.append(d);
+  $('tabs').querySelectorAll('button').forEach(b=>{const on=b.dataset.k===cur;b.classList.toggle('on',on);b.setAttribute('aria-pressed',String(on))});
+}
+for(const k of Object.keys(LAY)){const b=key(LAY[k].name,'',()=>{cur=k;sh=0;render()});b.dataset.k=k;$('tabs').append(b)}
+$('conv').onclick=()=>apply(smart);
+$('ork').onclick=()=>apply(toOrk);
+$('back').onclick=()=>apply(toLat);
+$('undo').onclick=()=>step(-1);
+$('redo').onclick=()=>step(1);
+$('copy').onclick=()=>copy(ta.value);
+$('clr').onclick=()=>{snap();ta.value='';snap();ui();ta.focus()};
+document.querySelectorAll('[data-c]').forEach(b=>b.onclick=()=>copy($(b.dataset.c).textContent));
+$('sys').onclick=e=>{const b=e.currentTarget,native=ta.inputMode==='none';ta.inputMode=native?'text':'none';b.setAttribute('aria-pressed',String(native));applyLang();ta.blur();ta.focus()};
+ta.addEventListener('input',()=>{ui();clearTimeout(tm);tm=setTimeout(snap,500)});
+ta.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&!e.altKey){const k=e.key.toLowerCase();if(k==='z'){e.preventDefault();step(e.shiftKey?1:-1)}else if(k==='y'){e.preventDefault();step(1)}}});
+const dark=()=>document.documentElement.dataset.theme?document.documentElement.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+function themeBtn(){const d=dark();$('theme').textContent=TX(d?'light':'dark');$('theme').setAttribute('aria-pressed',String(d))}
+try{const th=localStorage.getItem('turkan-theme');if(th)document.documentElement.dataset.theme=th}catch(e){}
+$('theme').onclick=()=>{const n=dark()?'light':'dark';document.documentElement.dataset.theme=n;try{localStorage.setItem('turkan-theme',n)}catch(e){}themeBtn()};
+try{const v=localStorage.getItem('turkan-draft');if(v){ta.value=v;hist[0]={v,s:v.length,e:v.length}}}catch(e){}
+try{if(localStorage.getItem('turkan-fa')==='0'){faDigits=false;$('fa').checked=false}}catch(e){}
+$('fa').onchange=e=>{faDigits=e.target.checked;try{localStorage.setItem('turkan-fa',faDigits?'1':'0')}catch(_){}ui()};
+const I18N={
+tag:['Türkcə klaviatura','تورکجه کیبوردو'],
+dark:['Qaranlıq tema','قارانلیق تم'],light:['İşıqlı tema','ایشیقلی تم'],
+lang:['Əlifbanı dəyiş','الفبانی دییش'],
+editor:['Redaktor','ردکتور'],
+undo:['↶ Geri qaytar','↶ گئری قایتار'],redo:['↷ Yenidən','↷ یئنیدن'],
+text:['Mətn','متن'],ph:['Buraya yaz…','بورایا یاز…'],
+ork:['Orxona çevir','اورخونا چئویر'],back:['Orxondan Türkcəyə','اورخوندان تورکجه‌یه'],
+cp:['Kopyala','کوپیا ائت'],cpall:['Hamısını kopyala','هامیسینی کوپیا ائت'],clr:['Təmizlə','تمیزله'],
+fa:['Fars rəqəmləri','فارس رقملری'],
+sys1:['Telefon klaviaturası','تلفون کیبوردو'],sys2:['Səhifə klaviaturası','صفحه کیبوردو'],
+kbd:['Klaviatura','کیبورد'],layout:['Düzülüş','دوزولوش'],prev:['Üç yazıda önbaxış','اوچ یازیدا اؤن‌باخیش'],
+orx:['Orxon','اورخون'],
+note:['Önbaxış eyni mətni üç yazıda göstərir. Orxon müasir və təxmini səsləndirmədir, tarixi transkripsiya deyil. Mətn yalnız bu brauzerdə saxlanır.','اؤن‌باخیش ائیی متنی اوچ یازیدا گؤستریر. اورخون مؤاصیر و تقریبی سسلندیرمه‌دیر، تاریخی ترانسکریپسیا دئییل. متن یالنیز بو براوزرده ساخلانیر.'],
+nocopy:['Kopyalanacaq heç nə yoxdur','کوپیا ائدیلجک هئچ نه یوخدور'],copied:['Kopyalandı','کوپیا ائدیلدی'],copyfail:['Kopyalama alınmadı','کوپیا اولمادی'],
+cc:[' işarə · ',' نیشانه · '],ww:[' söz',' سؤز'],
+del:['Sil','سیل'],shift:['Şift','شیفت'],zw:['Yarım boşluq','یاریم بوشلوق'],space:['Boşluq','بوشلوق'],enter:['Enter','اینتر']};
+let AR=true;try{AR=localStorage.getItem('turkan-ui')!=='lat'}catch(e){}
+const TX=k=>I18N[k][AR?1:0];
+function applyLang(){const e=document.documentElement;e.dir=AR?'rtl':'ltr';e.lang='az';
+ document.querySelectorAll('[data-i]').forEach(x=>x.textContent=TX(x.dataset.i));
+ document.querySelectorAll('[data-a]').forEach(x=>x.setAttribute('aria-label',TX(x.dataset.a)));
+ document.querySelectorAll('[data-p]').forEach(x=>x.placeholder=TX(x.dataset.p));
+ $('sys').textContent=TX(ta.inputMode==='none'?'sys1':'sys2');
+ $('langt').textContent=AR?'Türkcə':'تورکجه';$('lang').setAttribute('aria-label',TX('lang'));themeBtn()}
+$('lang').onclick=()=>{AR=!AR;try{localStorage.setItem('turkan-ui',AR?'ar':'lat')}catch(e){}applyLang();render();ui()};
+applyLang();render();ui();
+</script>
+</body>
+</html>
