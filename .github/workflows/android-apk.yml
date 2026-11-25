@@ -27,14 +27,12 @@ jobs:
           python3 tools/gen_script_tables.py
           git diff --exit-code -- app/src/main/java/com/turkanyazi/keyboard/ScriptTables.kt tools/out
 
-      - name: Install Android SDK components
-        uses: android-actions/setup-android@v3
+      - name: Accept Android SDK licenses and install components
+        run: |
+          SDKM="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          yes | "$SDKM" --licenses > /dev/null || true
+          "$SDKM" --install "platforms;android-35" "build-tools;35.0.0"
 
-      - name: Install Android platform and build tools
-        run: sdkmanager --install "platforms;android-35" "build-tools;35.0.0"
-
-      # Pin Gradle explicitly: runner images may ship a newer Gradle that the
-      # Android Gradle Plugin used here does not support.
       - name: Set up Gradle 8.9
         uses: gradle/actions/setup-gradle@v4
         with:
